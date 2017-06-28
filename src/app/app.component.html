@@ -1,20 +1,213 @@
-<!--The whole content below can be removed with the new code.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<body>
+    <div class="main-wrapper">
+        <div class="landingPage-wrapper">
+            <div class="container">
+                <header class="header-block">
+                    <div class="branding">
+                        <nav class="navbar navbar-toggleable-sm navbar-light head-navbar-mod">
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-text">Menu</span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/unity_logo.png" class="logo" alt="Unity Influence Logo">
+                            </a>
+                            <div class="collapse navbar-collapse navbar-align-right" id="navbarText">
+                                <span class="navbar-block">
+                                  <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">How it works</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Influencers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Brands</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <button type="button" class="btn btn-primary" (click) ="instaLogin()" >Login</button>
+                                    </li>
+                                  </ul>
+                                </span>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <div class="row landing-page-content">
+                    <div class="jumbotron col-lg-7 col-md-11 col-sm-12">
+                        <h1 class="display-3">Influencers and brands meet here.</h1>
+                        <p class="lead sub-title">Unity is an online marketplace that connects the best brands to the biggest social media influencers.</p>
+                        <p class="lead jumbotron-btn">
+                            <a class="btn btn-primary btn-lg" href="#" role="button" (click) = "instaSignup()">Get Started</a>
+                        </p>
+                        <p class="lead">Already a Unity user? <a class="underlined-text link-text" href="#" role="button">Sign in</a> </p>
+                    </div>
+                    <div class="col-lg-5 hidden-md-down campaign-updates-mod">
+                        <div class="row">
+                            <div class="offset-md-1 col-md-11">
+                                <div class="message-block">
+                                    <div class="message-container typing-mod"></div>
+                                    <div class="message-container context">Hey Jen check out these new brand deals for you...</div>
+                                </div>
+                                <div class="campaign-slider-block message-container">
+                                    <h5 class="slider-title">Unity deals</h5>
+                                    <ul class="owl-carousel owl-theme">
+                                        <li class="item">
+                                            <img src="assets/images/campaign1.jpg" >
+                                        </li>
+                                        <li class="item">
+                                            <img src="assets/images/campaign2.jpg"/>
+                                        </li>
+                                        <li class="item">
+                                            <img src="assets/images/campaign3.jpg"/>
+                                        </li>
+                                        <li class="item">
+                                            <img src="assets/images/campaign4.jpg"/>
+                                        </li>
+                                        <li class="item">
+                                            <img src="assets/images/campaign5.jpg"/>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center">
+                                        <a href="" class="link-text">Choose Campaign</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer landing-page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9"  id="footer-list" role="tablist" aria-multiselectable="true">
+                        <div class="row">
+                            <div class="col-md-3 footer-listing">
+                                <div class="footer-list-block">
+                                    <div class="list-head"
+                                         data-toggle="collapse"
+                                         data-target= "#col-1"
+                                         aria-expanded="false"
+                                         data-parent="#footer-list">
+                                        <h3 class="footer-title">Unity Influence</h3>
+                                        <i class="icon icon-plus pull-right"></i>
+                                    </div>
+                                    <ul role="button"role="tabpanel" id=col-1 class="collapse footer-list">
+                                        <li><a href="" alt="" class="footer-link">Product</a></li>
+                                        <li><a href="" alt="" class="footer-link">Influencers</a></li>
+                                        <li><a href="" alt="" class="footer-link">Brands</a></li>
+                                        <li><a href="" alt="" class="footer-link">About Us</a></li>
+                                        <li><a href="" alt="" class="footer-link">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 footer-listing">
+                                <div class="footer-list-block">
+                                    <div class="list-head"
+                                         data-toggle="collapse"
+                                         data-target= "#col-2"
+                                         aria-expanded="false"
+                                         data-parent="#footer-list">
+                                        <h3 class="footer-title">Platform</h3>
+                                        <i class="icon icon-plus pull-right"></i>
+                                    </div>
+                                    <ul role="button"role="tabpanel" id=col-2 class="collapse footer-list">
+                                        <li><a href="" alt="" class="footer-link">Login</a></li>
+                                        <li><a href="" alt="" class="footer-link">Report Issue</a></li>
+                                        <li><a href="" alt="" class="footer-link">User Support</a></li>
+                                        <li><a href="" alt="" class="footer-link">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 footer-listing">
+                                <div class="footer-list-block">
+                                    <div class="list-head"
+                                         data-toggle="collapse"
+                                         data-target= "#col-3"
+                                         aria-expanded="false"
+                                         data-parent="#footer-list">
+                                        <h3 class="footer-title">News</h3>
+                                        <i class="icon icon-plus pull-right"></i>
+                                    </div>
+                                    <ul role="button"role="tabpanel" id=col-3 class="collapse footer-list">
+                                        <li><a href="" alt="" class="footer-link">Blog</a></li>
+                                        <li><a href="" alt="" class="footer-link">Careers</a></li>
+                                        <li><a href="" alt="" class="footer-link">Press</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 footer-listing">
+                                <div class="footer-list-block">
+                                    <div class="list-head"
+                                         data-toggle="collapse"
+                                         data-target= "#col-4"
+                                         aria-expanded="false"
+                                         data-parent="#footer-list">
+                                        <h3 class="footer-title">Legal</h3>
+                                        <i class="icon icon-plus pull-right"></i>
+                                    </div>
+                                    <ul role="button"role="tabpanel" id=col-4 class="collapse footer-list">
+                                        <li><a href="" alt="" class="footer-link">Terms of Use</a></li>
+                                        <li><a href="" alt="" class="footer-link">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-9 offset-md-3">
+                                <ul class="social-listing">
+                                    <li><i class="icon icon-instagram"></i></li>
+                                    <li><i class="icon icon-twitter"></i></li>
+                                    <li><i class="icon icon-facebook"></i></li>
+                                    <li><i class="icon icon-youtube"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="copyright">Copyright &copy; 2017 Unity Influence. Unity Influence is a registered trademark.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/jquery-1.12.0.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                nav: true,
+                dots: false,
+                center: true
+            })
+            var owl = $('.owl-carousel');
+//
+            owl.owlCarousel();
+
+            // Go to the next item
+            $('.owl-next').click(function() {
+                owl.trigger('next.owl.carousel');
+            })
+
+            // Go to the previous item
+            $('.owl-prev').click(function() {
+                // With optional speed parameter
+                // Parameters has to be in square bracket '[]'
+                owl.trigger('prev.owl.carousel', [300]);
+            })
+        });
+    </script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+</body>
